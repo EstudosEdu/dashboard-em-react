@@ -1,0 +1,6 @@
+.teste {
+  display: flex;
+  width: calc(100vw - 300px);
+  height: auto;
+  flex-wrap: wrap;
+}

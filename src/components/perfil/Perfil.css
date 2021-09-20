@@ -1,0 +1,73 @@
+.perfil-container {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  border: 4px solid #fff;
+}
+
+
+.perfil-imagem {
+  width: 6.5rem;
+  height: 6.5rem;
+  object-fit: cover;
+  display: block;
+}
+
+
+.sla {
+  width: 100%;
+  height: 65%;
+  background: var(--Blue);
+  border-radius: 15px;
+}
+
+
+.perfil-cont-report {
+  padding: 2.5rem;
+}
+
+
+.perfil-container-geral {
+  background: var(--Dark--blue);
+  display: flex;
+  flex-direction: column;
+  width: 17.709375rem;
+  align-items: center;
+  height: 39.5rem;
+  border-radius: 15px;
+  margin: 30px 0px 0px 20px
+}
+
+#perfil-report{
+  color: var(--Pale--Blue);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+#perfil-nome{
+  font-size: 300%;
+  font-weight: 300;
+}
+
+.perfil-days {
+  padding: 2.5rem;
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.perfil-days h4{
+  color: var(--Desaturated--blue);
+  font-size: 1.3rem;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+
+.perfil-days h4:hover{
+  color: var(--Pale--Blue);
+  cursor: pointer;
+}

@@ -71,3 +71,34 @@
   color: var(--Pale--Blue);
   cursor: pointer;
 }
+
+@media screen and (max-width: 1024px){
+  .perfil-container-geral{
+   width: 100%;
+   margin: 2% auto;
+  }
+  .perfil-cont-report{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .perfil-days{
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1325px){
+  .perfil-container-geral{
+    width: 30vw;
+    height: 80vh;
+  }
+  .perfil-cont-report{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perfil-days{
+    align-items: center;
+  }
+}

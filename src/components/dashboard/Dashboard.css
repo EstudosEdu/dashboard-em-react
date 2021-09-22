@@ -4,3 +4,18 @@
   height: auto;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1024px){
+  .teste{
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1325px){
+  .teste{
+    width: calc(100vw - 30vw);
+    height: 87vh;
+    display: flex;
+    align-items: center;
+  } 
+}

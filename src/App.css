@@ -11,7 +11,7 @@
 
 :root{
   --Blue: hsl(246, 80%, 60%);
-  --Light--red: hsl(15, 100%, 70%);
+  --Light--orange: hsl(15, 100%, 70%);
   --Soft--blue: hsl(195, 74%, 62%);
   --Light--red: hsl(348, 100%, 68%);
   --Lime--green: hsl(145, 58%, 55%);
@@ -27,6 +27,7 @@
 
 body{
   background: var(--Very--dark--blue);
+  transition: .8s;
 }
 
 
@@ -35,4 +36,15 @@ body{
   align-items: center;
   width: 100vw;
   height: 100vh;
+}
+
+@media screen and (max-width: 1240px){
+  .app-container{
+    align-items: normal;
+  }
+}
+@media screen and (max-width: 1024px){
+  .app-container{
+    display: inline;
+  }
 }

@@ -1,23 +1,32 @@
 import React from 'react';
 import './Dashcard.css';
-import Dots from '../../img/dots.svg';
-import Work from '../../img/icon-work.svg'
+import Dots from '../../../assets/img/dots.svg';
+
 
 const Dashcard = (props) =>{
-  console.log(props.teste.color);
-
+  
   return(
-    <div className="dashcard-card" style={{background: `var(${props.teste.color})`}}>
+    <div className="dashcard-card" style={{background: `var(${props.dado.color})`}}>
       <span>
-        <img src={Work} alt="" class="dashcard-imagem-title"/>
+        <img src={`./assets/img/${props.dado.i}.svg`} alt="" class="dashcard-imagem-title"/>
       </span>
       <div className="dashcard-infos">
         <div className="dashcard-title">
-          <h4>{props.teste.title}</h4>
+          <h4>{props.dado.title}</h4>
           <img src={Dots} alt="tres pontos"/>
         </div>
-        <h1>{props.teste.timeframes.daily.current}hrs</h1>
-        <p>Last Week - {props.teste.timeframes.daily.previous}hrs</p>
+        
+        <h1>{
+        props.opt == 1 && props.dado.timeframes.daily.current
+        || props.opt == 2 && props.dado.timeframes.weekly.current 
+        || props.opt == 3 && props.dado.timeframes.monthly.current 
+        }hrs</h1>
+        
+        <p>Last Week - {
+        props.opt == 1 && props.dado.timeframes.daily.previous 
+        || props.opt == 2 && props.dado.timeframes.weekly.previous 
+        || props.opt == 3 && props.dado.timeframes.monthly.previous 
+        }hrs</p>
       </div>
     </div>
   )

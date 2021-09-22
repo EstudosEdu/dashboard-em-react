@@ -1,8 +1,8 @@
 import React from 'react';
 import './Perfil.css';
 
-const Perfil = () =>{
-  const imagem = "https://media-exp1.licdn.com/dms/image/C4E03AQGH0O-WcK6k5g/profile-displayphoto-shrink_200_200/0/1628891939101?e=1637193600&v=beta&t=fw4hRXRhW7sAlGS_KqSOfux3xQUMGYjrD4TtpgksdXs";
+const Perfil = (props) =>{
+  const imagem = "./assets/img/image-jeremy.png";
   
   return(
     <>
@@ -17,12 +17,11 @@ const Perfil = () =>{
           </div>
         </div>
         <div className="perfil-days">
-          <h4>Daily</h4>
-          <h4>Weekly</h4>
-          <h4>Monstly</h4>
+          <h4 onClick={()=> props.setOpt(1)}>Daily</h4>
+          <h4 onClick={()=> props.setOpt(2)}>Weekly</h4>
+          <h4 onClick={()=> props.setOpt(3)}>Monstly</h4>
         </div>
       </div>
-
     </>
   )
 }
